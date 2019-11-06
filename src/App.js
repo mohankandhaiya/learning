@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Mohan Kandhaiya</h1>
+      <header>
+        <h1 className="App-header">Mohan Kandhaiya</h1>
       </header>
     </div>
   );
