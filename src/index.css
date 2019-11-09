@@ -1,0 +1,16 @@
+body{
+    background-color: #eeeeee;
+}
+
+.layout-header{
+    background-color: mediumseagreen;
+    border-bottom: 0.2px solid #eee;
+}
+
+.ant-layout-header {
+    background-color: white;
+    height: 50px;
+    line-height: 50px;
+    z-index: 1;
+    padding: 0 20px;
+}

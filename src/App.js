@@ -1,13 +1,25 @@
 import React from 'react';
 import './App.css';
+import { Layout } from 'antd';
+import Navbar from "./components/Navbar";
+
+const { Header, Content, Sider } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1 className="App-header">Mohan Kandhaiya</h1>
-      </header>
-    </div>
+      <Layout>
+          <Header className="layout-header">
+              <Navbar />
+          </Header>
+          <Layout>
+              <Sider theme="light" >
+                  {/*<Sidebar />*/}
+              </Sider>
+              <Content>
+                  {/*<CardLayout />*/}
+              </Content>
+          </Layout>
+      </Layout>
   );
 }
 

@@ -1,22 +1,161 @@
-/*.App {*/
-/*  text-align: center;*/
-/*}*/
+/*Importing Ant Design CSS*/
 
-/*.App-logo {*/
-/*  height: 40vmin;*/
-/*}*/
+@import '~antd/dist/antd.css';
 
-/*.App-header {*/
-/*  background-color: #282c34;*/
-/*  min-height: 100vh;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  font-size: calc(10px + 2vmin);*/
-/*  color: white;*/
-/*}*/
+/*Common CSS Stylesheet*/
 
-/*.App-link {*/
-/*  color: #09d3ac;*/
-/*}*/
+.center{
+    text-align: center;
+}
+
+.btn-size{
+    width: 100%;
+}
+
+.margin-top{
+    margin-top: 10px;
+}
+
+/*Login CSS Stylesheet*/
+
+.container, .container-register{
+    width: 400px;
+    height: 430px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 0px 10px #ccc;
+    padding: 30px 40px;
+}
+
+.container-register{
+    height: 675px;
+}
+
+.head{
+    text-align: center;
+    font-size: 18px;
+    color:  royalblue;
+}
+
+.tagline{
+    text-align: center;
+    font-size: 14px;
+    color: royalblue;
+    padding-bottom: 10px;
+}
+
+/*Navbar CSS Stylesheet*/
+
+.logo{
+    float: left;
+    padding: 0 20px;
+}
+.logo a{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px;
+    color: royalblue;
+}
+.menuCon .ant-menu-item{
+    padding: 0px 5px;
+}
+.menuCon .ant-menu-submenu-title{
+    padding: 10px 20px;
+}
+.menuCon .ant-menu-item a, .menuCon .ant-menu-submenu-title a{
+    padding: 10px 15px;
+}
+.menuCon .ant-menu-horizontal{
+    border-bottom: none;
+}
+.menuCon .leftMenu{
+    float: left;
+}
+.menuCon .rightMenu{
+    float: right;
+}
+.barsMenu{
+    float: right;
+    height: 32px;
+    padding: 6px;
+    margin-top: 8px;
+    display: none;
+    background: none;
+}
+.barsBtn{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1890ff;
+    position: relative;
+}
+.barsBtn:after,.barsBtn:before{
+    content: attr(x);
+    width: 20px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 2px;
+    background: #1890ff;
+}
+.barsBtn:after{
+    top: auto;
+    bottom: -6px;
+}
+.ant-drawer-body{
+    padding: 0;
+}
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item, .ant-drawer-body .ant-menu-horizontal > .ant-menu-submenu{
+    display: inline-block;
+    width: 100%;
+}
+.ant-drawer-body .ant-menu-horizontal{
+    border-bottom: none;
+}
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item:hover{
+    border-bottom-color: transparent;
+}
+
+@media(max-width: 767px){
+    .barsMenu{
+        display: inline-block;
+    }
+    .leftMenu,.rightMenu{
+        display: none;
+    }
+    .logo a{
+        margin-left: -20px;
+    }
+    .menuCon .ant-menu-item, .menuCon .ant-menu-submenu-title{
+        padding: 1px 20px;
+    }
+    .logo a{
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+.ant-menu-horizontal {
+    line-height: 28px;
+}
+
+
+.layout-header{
+    background-color: mediumseagreen;
+    border-bottom: 0.2px solid #eee;
+}
+
+.ant-layout-header {
+    background-color: white;
+    height: 50px;
+    line-height: 50px;
+    z-index: 1;
+    padding: 0 20px;
+}
